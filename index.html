@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Management Page</title>
+    <script type="module" src="main.js"></script>
+    
+</head>
+<body>
+    
+    <div align="center">
+    <form name="regForm" novalidate style="align-content : center" >
+        <fieldset style="text-align: center;">
+            <legend style="text-align: center ">Customer Management System</legend>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" minlength="10" maxlength="50" placeholder="First Name" required/><br>
+                <p id="firstName_errors"></p>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" minlength="10" maxlength="=50" placeholder="Last Name"/><br>
+                <p id="lastName_errors"></p>
+            </div>
+
+            <div>
+                <label for="tel">Contact No.:</label>
+                <input type="text" id="tel" name="tel"  pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" placeholder="**********" /><br>           
+                <p id="tel_errors"></p>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>            
+                <input type="email" id="email" name="email" maxlength="50" placeholder="******@***.***" required/><br>
+                <p id="email_errors"></p>
+            </div>
+
+            <input type="submit" onclick="validate()" value="ADD"/>
+        </fieldset>
+    </form>
+    <br><br>
+    <div id ="data">
+        <table style="margin:1em auto;" id  = "custTable" border="1">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact No.</th>
+                <th>Email ID</th>
+                <th>Action</th>
+            </tr>
+        </table>
+</div>    
+</script>
+</body>
+</html> 
+
+<!-- <table style="box-align: center; border:1px">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact No.</th>
+                <th>Email</th>
+                <th>ID</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+            <c:forEach type="itemid="posts">
+                <td>${posts.firstName}</td>
+                <td>${posts.lastName}</td>
+                <td>${posts.tel}</td>
+                <td>${posts.email}</td>
+                <td><button onclick="remove()">X</button></td>
+            </c:forEach>
+            </tr>
+        </table>
+
+    </div>
+</table>
+
+    
+             // if(document.regForm.value == "" || document.regForm.value == null){
+            //     alert("please enter first name");
+            //     document.regForm.firstName.focus();
+            //     return false;
+            // }
+
+        //     const fn = document.forms[0]["firstName"];
+        //     let letters = /^[A-Z a-z]/g;
+        //     if(fn.value.match(letters)){
+        //         return true;
+        //     }
+        //     else{
+        //         alert("Please Enter First Name");
+        //         return false;
+        //     }
+        // }
+       
+    //  document.forms[0].addEventListener("submit", function validate(){
+    //     const fn = document.forms[0]["firstName"];
+    //     const f = doc<script> -->
+
+        <!-- function validate(){
+            let fn = document.getElementById("firstName").value;
+            function firstNameValidate(){               
+               let alpha = /^[a-z A-Z]/;
+               if(alpha.test(fn)){
+                   return true;
+               }
+               else{
+                   alert("Please Enter First Name");
+                   return false;
+               }
+            }
+           function emailvalidate(){
+               let e = document.getElementById("email").value;
+               console.log(e);
+               let atposition = e.indexOf("@");
+               let dotposition = e.lastIndexOf(".");
+               if(atposition<1 || dotposition<atposition+2 || dotposition+2>=e.length){
+                    alert("Please enter a valid email address");
+                    return false;
+               }
+           }
+
+           }ument.querySelector("#firstName_errors");
+    //     const no = document.forms[0]["tel"];
+    //     const n = document.querySelector("#tel_errors");
+    //     const em = document.forms[0]["email"];
+    //     const e = document.querySelector("#email_errors");
+
+        
+    //     if(f == null || f == ""){
+    //         alert("Please Enter First Name");
+    //         return false;
+    //         //  fn.style.color="red";
+    //         //  fn.textContent = "First Name is Required";
+    //     } 
+              
+    //      if(isNaN(no)){
+    //          no.style.color="red";
+    //          no.textContent="Only Numbers are allowed";
+    //          return false;
+    //      }
+         
+    //      if(!e.checkValidity()){
+    //          e.style.color = "red";
+    //      e.textContent = "Email is Required";
+    //  }
+    //  else{
+    //      e.textContent = null;
+    //      }
+
+    //  });  
+     
+
+ 

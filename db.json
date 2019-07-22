@@ -1,0 +1,36 @@
+{
+  "customers": [
+    {
+      "fn": "",
+      "ln": "",
+      "te": "",
+      "em": "",
+      "id": 3
+    },
+    {
+      "fn": "fjhjshf",
+      "ln": "",
+      "te": "",
+      "em": "",
+      "id": 4
+    },
+    {
+      "fn": "fhdjfh",
+      "ln": "",
+      "te": "dfhdjfhjdf",
+      "em": "sjdasd@gmail.com",
+      "id": 5
+    },
+    {
+      "fn": "Sruthi Mandulla",
+      "ln": "jsdasd",
+      "te": "1234567891",
+      "em": "sjdasd@gmail.com",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
